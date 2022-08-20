@@ -84,3 +84,38 @@ a {
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (min-width: 768px) {
+  .banner {
+    position: fixed;
+    /* 기존에 정의한 bottom은 효력을 발휘할 수 없다.*/
+    bottom: auto;
+    top: 0px;
+  }
+
+  .banner-title a {
+    height: 80px;
+  }
+
+  .landing {
+    align-items: center;
+  }
+
+  .landing-title {
+    margin-bottom: 32px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+  }
+
+  .landing-title strong {
+    font-weight: 700;
+  }
+
+  .landing-link {
+    font-size: 18px;
+    width: 180px;
+    height: 56px;
+  }
+}
